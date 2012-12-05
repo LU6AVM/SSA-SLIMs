@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -117,14 +117,13 @@
 <library>
 <packages>
 <package name="SLIM_COAX_PAD">
-<circle x="0" y="0" radius="0.508" width="1.016" layer="1"/>
-<circle x="0" y="0" radius="1.143" width="2.286" layer="30"/>
-<circle x="0" y="0" radius="0.381" width="0.762" layer="42"/>
-<pad name="P$1" x="0" y="0" drill="0.508" diameter="1.016"/>
-<smd name="P$2" x="0" y="-1.397" dx="1.27" dy="0.635" layer="16" stop="no" thermals="no" cream="no"/>
+<pad name="P$1" x="0" y="0" drill="1.5"/>
+<smd name="P$2" x="0" y="-2.667" dx="1.27" dy="0.635" layer="16" stop="no" thermals="no" cream="no"/>
 <polygon width="0.0508" layer="16">
 </polygon>
-<text x="2.54" y="1.27" size="0.635" layer="25" ratio="20">&gt;NAME</text>
+<text x="5.08" y="1.27" size="0.635" layer="25" ratio="20" align="center-left">&gt;NAME</text>
+<rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="30"/>
+<text x="5.08" y="0" size="0.635" layer="25" ratio="20" rot="MR0" align="center-right">&gt;NAME</text>
 </package>
 <package name="TO252">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
@@ -387,13 +386,14 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <wire x1="2.983" y1="2.5019" x2="3.5052" y2="2.114" width="0.2032" layer="51" curve="89.508381"/>
 <wire x1="3.5052" y1="-2.114" x2="2.856" y2="-2.5019" width="0.2032" layer="51" curve="89.516643"/>
 <wire x1="-2.983" y1="-2.5019" x2="-3.5052" y2="-1.987" width="0.2032" layer="51" curve="89.508381"/>
-<circle x="-2.558" y="-0.708" radius="0.182" width="0" layer="21"/>
+<circle x="-3.828" y="-3.248" radius="0.182" width="0" layer="21"/>
 <smd name="1" x="-2.54" y="-2.0955" dx="1.8034" dy="2.0066" layer="1"/>
 <smd name="2" x="2.54" y="-2.0955" dx="1.8034" dy="2.0066" layer="1"/>
 <smd name="3" x="2.54" y="2.0955" dx="1.8034" dy="2.0066" layer="1"/>
 <smd name="4" x="-2.54" y="2.0955" dx="1.8034" dy="2.0066" layer="1"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-3.828" y="-3.248" radius="0.182" width="0" layer="21"/>
 </package>
 <package name="MSOP10">
 <smd name="1" x="-1" y="-2.2" dx="0.34" dy="1.04" layer="1"/>
@@ -469,8 +469,8 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.2032" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.2032" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1" thermals="no"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1" thermals="no"/>
 <text x="-0.762" y="0.8255" size="0.635" layer="25" ratio="20">&gt;NAME</text>
@@ -507,10 +507,10 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-<wire x1="-7.62" y1="1.27" x2="7.62" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="1.27" x2="7.62" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="-1.27" x2="-7.62" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="7.62" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="1.27" x2="7.62" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-1.27" x2="-7.62" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.2032" layer="21"/>
 </package>
 <package name="CONN-3PIN">
 <pad name="1" x="-2.54" y="0" drill="1.016" shape="square" rot="R90"/>
@@ -518,10 +518,10 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <pad name="3" x="2.54" y="0" drill="1.016" rot="R90"/>
 <text x="-3.81" y="1.651" size="0.635" layer="25" ratio="20">&gt;NAME</text>
 <text x="-3.81" y="-2.921" size="0.635" layer="27" ratio="20">&gt;VALUE</text>
-<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="-3.81" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="-3.81" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.2032" layer="21"/>
 </package>
 <package name="SSOP28">
 <smd name="1" x="-4.16" y="-3.6" dx="0.42" dy="1.34" layer="1"/>
@@ -572,12 +572,12 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <text x="-1.5" y="1" size="0.635" layer="25" ratio="20">&gt;NAME</text>
 <text x="-1.5" y="-1.5" size="0.635" layer="27" ratio="20">&gt;VALUE</text>
 <wire x1="-0.4" y1="0.4" x2="-0.4" y2="-0.4" width="0.1524" layer="21"/>
-<wire x1="-1.3" y1="0.55" x2="-1" y2="0.7" width="0.1524" layer="21"/>
-<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="21"/>
-<wire x1="1" y1="0.7" x2="1" y2="0.55" width="0.1524" layer="21"/>
-<wire x1="-1.3" y1="-0.55" x2="-1" y2="-0.7" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-0.7" x2="1" y2="-0.7" width="0.1524" layer="21"/>
-<wire x1="1" y1="-0.7" x2="1" y2="-0.55" width="0.1524" layer="21"/>
+<wire x1="-1.3" y1="0.55" x2="-1" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1" y1="0.7" x2="1" y2="0.55" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="-0.55" x2="-1" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-0.7" x2="1" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1" y1="-0.7" x2="1" y2="-0.55" width="0.2032" layer="21"/>
 </package>
 <package name="CONN-12PIN">
 <pad name="1" x="-13.97" y="0" drill="1.016" shape="square" rot="R90"/>
@@ -588,10 +588,10 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <pad name="6" x="-1.27" y="0" drill="1.016" rot="R90"/>
 <text x="-15.24" y="1.651" size="0.635" layer="25" ratio="20">&gt;NAME</text>
 <text x="-15.24" y="-2.921" size="0.635" layer="27" ratio="20">&gt;VALUE</text>
-<wire x1="-15.24" y1="1.27" x2="15.24" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="1.27" x2="15.24" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-1.27" x2="-15.24" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-15.24" y1="-1.27" x2="-15.24" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-15.24" y1="1.27" x2="15.24" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="1.27" x2="15.24" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="-1.27" x2="-15.24" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="-1.27" x2="-15.24" y2="1.27" width="0.2032" layer="21"/>
 <pad name="7" x="1.27" y="0" drill="1.016" rot="R90"/>
 <pad name="8" x="3.81" y="0" drill="1.016" rot="R90"/>
 <pad name="9" x="6.35" y="0" drill="1.016" rot="R90"/>
@@ -637,8 +637,8 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 </polygon>
 </package>
 <package name="0805-IND">
-<wire x1="-0.15" y1="0.8" x2="0.15" y2="0.8" width="0.1524" layer="21"/>
-<wire x1="-0.15" y1="-0.8" x2="0.15" y2="-0.8" width="0.1524" layer="21"/>
+<wire x1="-0.15" y1="0.8" x2="0.15" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="-0.15" y1="-0.8" x2="0.15" y2="-0.8" width="0.2032" layer="21"/>
 <smd name="1" x="-0.875" y="0" dx="1" dy="1.75" layer="1" thermals="no"/>
 <smd name="2" x="0.875" y="0" dx="1" dy="1.75" layer="1" thermals="no"/>
 <text x="-1.362" y="1.3255" size="0.635" layer="25" ratio="20">&gt;NAME</text>
